@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="UTF-8" />
+    <title>QR scanner</title>
+    <script type="module" src="sw-register.js"></script>
+    <script type="module" src="module.js"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#260066" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="icons/favicon.svg"
+      sizes="any"
+    />
+
+    <meta name="description" content="QR scanner" />
+    <meta name="keywords" content="QR, scanner" />
+    <meta name="robots" content="all" />
+    <link rel="canonical" href="https://noxell-zs.github.io/QR-scanner/" />
+
+    <meta property="og:title" content="QR scanner" />
+    <meta property="og:description" content="QR scanner" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://noxell-zs.github.io/QR-scanner/" />
+    <meta
+      property="og:image"
+      content="https://noxell-zs.github.io/QR-scanner/icons/icon512.png"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "QR scanner",
+        "description": "QR scanner",
+        "url": "https://noxell-zs.github.io/QR-scanner/",
+        "image": "https://noxell-zs.github.io/QR-scanner/icons/icon512.png"
+      }
+    </script>
+  </head>
+  <body>
+    <main>
+      <video id="video" autoplay></video>
+      <div>
+        <div id="result">Scanned Barcode:</div>
+        <output id="barcodeResult"></output>
+      </div>
+    </main>
+  </body>
+</html>
